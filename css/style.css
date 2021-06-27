@@ -1,0 +1,20 @@
+body {
+    background-image:url(https://img4.goodfon.com/wallpaper/nbig/d/73/tosty-khleb-sendvich-kuritsa-miasmo-ovoshchi-zelen-sous-ingr.jpg);
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    justify-content: flex-end;
+    padding: 7px;
+    margin: 6px 16px;
+    background-color:#b0d1c2;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+
+    color: aliceblue;
+}
