@@ -3,6 +3,7 @@ body {
     font-family: 'Crimson Pro', serif;
     font-size: 20px;
   }
+
   
   nav ul li {
     display: inline-block;
@@ -17,4 +18,16 @@ body {
 body{
 
     color: aliceblue;
+}
+
+.but{
+
+display: flex;
+justify-content:first baseline;
+
+}
+.but{
+
+    background-color: gray;
+    width: fit-content;
 }
