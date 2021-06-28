@@ -16,8 +16,10 @@ let seattle = {
     minCustomer : 23,
     maxCustomer : 65 ,
     customer : 0 ,
+    total:0,
     getCustomer:function(min , max) {
       this.customer=Math.ceil( this.AvgCookiesSale * getRandomInt(min,max));
+      this.total+=this.customer;
       return this.customer;
     } ,
     render : function(){
@@ -39,6 +41,11 @@ let seattle = {
         ulElem.appendChild(liElem);
       }
       artical.appendChild(ulElem);
+      let ulElem2 =document.createElement('ul');
+      artical.appendChild(ulElem2);
+      let liElem2=document.createElement('li');
+      liElem2.textContent=(`total   :    ${this.total}`);
+      ulElem2.appendChild(liElem2);
     
     }} 
 
@@ -55,8 +62,10 @@ let seattle = {
         minCustomer :3,
         maxCustomer : 24 ,
         customer : 0 ,
+        total:0,
         getCustomer:function(min , max) {
           this.customer=Math.ceil( this.AvgCookiesSale * getRandomInt(min,max));
+          this.total+=this.customer;
           return this.customer;
         } ,
         render : function(){
@@ -78,6 +87,13 @@ let seattle = {
             ulElem.appendChild(liElem);
           }
           artical.appendChild(ulElem);
+      let ulElem2 =document.createElement('ul');
+      artical.appendChild(ulElem2);
+      let liElem2=document.createElement('li');
+      liElem2.textContent=(`total   :    ${this.total}`);
+      ulElem2.appendChild(liElem2);
+      artical.appendChild(ulElem2);
+
         
         }} 
           
@@ -94,8 +110,10 @@ let seattle = {
         minCustomer :11,
         maxCustomer : 38 ,
         customer : 0 ,
+        total:0,
         getCustomer:function(min , max) {
           this.customer=Math.ceil( this.AvgCookiesSale * getRandomInt(min,max));
+          this.total+=this.customer;
           return this.customer;
         } ,
         render : function(){
@@ -117,6 +135,13 @@ let seattle = {
             ulElem.appendChild(liElem);
           }
           artical.appendChild(ulElem);
+
+          let ulElem2 =document.createElement('ul');
+      artical.appendChild(ulElem2);
+      let liElem2=document.createElement('li');
+      liElem2.textContent=(`total   :    ${this.total}`);
+      ulElem2.appendChild(liElem2);
+          artical.appendChild(ulElem2);
         
         }} 
           
@@ -135,8 +160,10 @@ let seattle = {
         minCustomer :20,
         maxCustomer : 38 ,
         customer : 0 ,
+        total:0,
         getCustomer:function(min , max) {
           this.customer=Math.ceil( this.AvgCookiesSale * getRandomInt(min,max));
+          this.total+=this.customer;
           return this.customer;
         } ,
         render : function(){
@@ -158,6 +185,13 @@ let seattle = {
             ulElem.appendChild(liElem);
           }
           artical.appendChild(ulElem);
+          let ulElem2 =document.createElement('ul');
+      artical.appendChild(ulElem2);
+      let liElem2=document.createElement('li');
+      liElem2.textContent=(`total   :    ${this.total}`);
+      ulElem2.appendChild(liElem2);
+      artical.appendChild(ulElem2);
+
         
         }} 
           
@@ -177,8 +211,10 @@ let seattle = {
         minCustomer :2,
         maxCustomer : 16 ,
         customer : 0 ,
+        total:0,
         getCustomer:function(min , max) {
           this.customer=Math.ceil( this.AvgCookiesSale * getRandomInt(min,max));
+          this.total+=this.customer;
           return this.customer;
         } ,
         render : function(){
@@ -200,6 +236,13 @@ let seattle = {
             ulElem.appendChild(liElem);
           }
           artical.appendChild(ulElem);
+          let ulElem2 =document.createElement('ul');
+      artical.appendChild(ulElem2);
+      let liElem2=document.createElement('li');
+      liElem2.textContent=(`total   :    ${this.total}`);
+      ulElem2.appendChild(liElem2);
+      artical.appendChild(ulElem2);
+
         
         }} 
           
