@@ -68,7 +68,7 @@ function Locatplace(name,max,min,avg){
       let dubai =new Locatplace('dubai',38,11,3.7);
       let paris =new Locatplace('paris',38,20,2.3);
       let lima =new Locatplace('lima',16,2,4.6);
-      let arr=[ ' ', '6am', '7am' , '8am','9am', '10am', '11 am', '12 pm ' , '1 pm ', '2 pm ' , '3pm ','4pm', '5pm', '6pm','7pm','Daily location total'];
+      let arr=[ 'loc\time ', '6am', '7am' , '8am','9am', '10am', '11 am', '12 pm ' , '1 pm ', '2 pm ' , '3pm ','4pm', '5pm', '6pm','7pm','Daily location total'];
       let containerEl = document.getElementById('container');
       let tableEl = document.createElement('table');
       containerEl.appendChild(tableEl);
