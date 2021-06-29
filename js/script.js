@@ -23,12 +23,9 @@ function Locatplace(name,max,min,avg){
     //console.log(customer);
     return customer;
     
-    } 
-       
-    
+    } ;
     locatplaces.push(this);
-
-  }
+  };
    
     Locatplace.prototype.render = function () {
       let sum=0;
@@ -81,9 +78,9 @@ function Locatplace(name,max,min,avg){
       thEl1.textContent = arr[i];
       trEl.appendChild(thEl1);
       }
+
       tableEl.appendChild(trEl);
-   
-      seattle.render()
+      seattle.render();
       tokyo.render();  
       dubai.render();
       paris.render();

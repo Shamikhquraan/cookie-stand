@@ -24,3 +24,19 @@ td {
 
   color: aliceblue;
 }
+.but{
+
+  display: flex;
+  justify-content:first baseline;
+  
+  }
+  .but{
+  
+      background-color: gray;
+      width: fit-content;
+  }
+  
+  h5{
+
+    color: aliceblue;
+  }
