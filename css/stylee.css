@@ -24,3 +24,20 @@ td {
 
   color: aliceblue;
 }
+.but{
+
+  display: flex;
+  justify-content:first baseline;
+  
+  }
+  .but{
+  
+      background-color: gray;
+      width: fit-content;
+  }
+  
+  h3{
+
+    color : red;
+    margin: 10 px;
+  }
