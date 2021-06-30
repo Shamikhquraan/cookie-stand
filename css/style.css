@@ -8,8 +8,8 @@ body {
   nav ul li {
     display: inline-block;
     justify-content: flex-end;
-    padding: 7px;
-    margin: 6px 16px;
+    padding: 6px;
+    margin: 5px 15px;
     background-color:#b0d1c2;
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
