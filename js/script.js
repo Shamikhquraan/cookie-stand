@@ -47,7 +47,14 @@ function Locatplace(name,max,min,avg){
         } else if(this.min==2){
           let tdEl3 = document.createElement('td');
           tdEl3.textContent ='Lima';
-          trEl.appendChild(tdEl3);}
+          trEl.appendChild(tdEl3);    }
+           else{
+              
+          let tdEl3 = document.createElement('td');
+          tdEl3.textContent =this.name;
+          trEl.appendChild(tdEl3);
+            
+          }
       for(let i=0 ; i<this.hour.length ; i++){
         let tdEl1 = document.createElement('td');
         tdEl1.textContent = this.avgC();
@@ -59,14 +66,9 @@ function Locatplace(name,max,min,avg){
     trEl.appendChild(tdEl2);
     tableEl.appendChild(trEl);
     containerEl.appendChild(tableEl);
-    }
+    };
      
-      let seattle = new Locatplace('seattle' ,65,23,6.3);
-      let tokyo = new Locatplace('tokyo' ,24,3,6.3);
-      let dubai =new Locatplace('dubai',38,11,3.7);
-      let paris =new Locatplace('paris',38,20,2.3);
-      let lima =new Locatplace('lima',16,2,4.6);
-      let arr=[ 'loc\time ', '6am', '7am' , '8am','9am', '10am', '11 am', '12 pm ' , '1 pm ', '2 pm ' , '3pm ','4pm', '5pm', '6pm','7pm','Daily location total'];
+      let arr=[ 'loc/time ', '6am', '7am' , '8am','9am', '10am', '11 am', '12 pm ' , '1 pm ', '2 pm ' , '3pm ','4pm', '5pm', '6pm','7pm','Daily location total'];
       let containerEl = document.getElementById('container');
       let tableEl = document.createElement('table');
       containerEl.appendChild(tableEl);
@@ -75,13 +77,34 @@ function Locatplace(name,max,min,avg){
       let thEl1 = document.createElement('th');
       thEl1.textContent = arr[i];
       trEl.appendChild(thEl1);
-      }
-
+      };
       tableEl.appendChild(trEl);
+
+
+
+      let seattle = new Locatplace('seattle' ,65,23,6.3);
+      let tokyo = new Locatplace('tokyo' ,24,3,6.3);
+      let dubai =new Locatplace('dubai',38,11,3.7);
+      let paris =new Locatplace('paris',38,20,2.3);
+      let lima =new Locatplace('lima',16,2,4.6);
       seattle.render();
       tokyo.render();  
       dubai.render();
       paris.render();
       lima.render();
+
+      
+let myForm = document.getElementById('myForm');
+myForm.addEventListener('submit', addRow);
+function addRow(event) {
+  event.preventDefault();
+
+   let loCname = event.target.loCname.value; 
+   let   mXnumber = event.target.mXnumber.value;
+   let   miniNum=event.target.miniNum.value;
+    let   avGnum = event.target.avGnum.value;
+  let brazeel = new Locatplace(loCname,mXnumber,miniNum,avGnum);
+brazeel.render();
+}
 
   
