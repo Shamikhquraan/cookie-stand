@@ -29,6 +29,7 @@ function Locatplace(name,max,min,avg){
     Locatplace.prototype.render = function () {
       let sum = 0;
       let total= 0 ;
+      let totaly=0;
       let trEl = document.createElement("tr");
       let tdEl3 = document.createElement("td");
       tdEl3.textContent = this.name;
@@ -40,15 +41,16 @@ function Locatplace(name,max,min,avg){
       trE6.appendChild(tdEl5);
       
       for (let i = 0; i < this.hour.length; i++) {
+        total=0;
         let tdEl1 = document.createElement("td");
         tdEl1.textContent = this.avgC();
         trEl.appendChild(tdEl1);
         sum += this.avgC();
+        console.log(this.arrC);
         for(let j=0 ; j<locatplaces.length ; j++){
-          total=total+this.avgC();
-
+          total=total+locatplaces[j].arrC[i];
         } 
-       
+       totaly+=total;
         let tdEl88 = document.createElement("td");
         tdEl88.textContent = total;
         trE6.appendChild(tdEl88);
@@ -58,15 +60,8 @@ function Locatplace(name,max,min,avg){
       tdEl2.textContent = sum;
       trEl.appendChild(tdEl2);
       let tdEl88 = document.createElement("td");
-      tdEl88.textContent = total;
+      tdEl88.textContent = totaly;
       trE6.appendChild(tdEl88);
-
-
-
-
-
-
-
 
       
       tableEl.appendChild(trEl);
