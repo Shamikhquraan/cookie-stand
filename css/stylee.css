@@ -40,10 +40,10 @@ th {
 
 #myForm {
 background-color:grey ;width: 300px;
-width: 200 px;
+width: 185 px;
 display:flex;
 justify-content: left;
-
+margin-left: 40px;
 }
 
 #firForm label {
