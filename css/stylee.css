@@ -1,16 +1,14 @@
 body {
-    font-family: 'Crimson Pro', serif;
-    font-size: 20px;
-  }
-
-#article {
-color: aliceblue;
-
+  font-family: "Crimson Pro", serif;
+  font-size: 20px;
 }
 
-h2{
+#article {
+  color: aliceblue;
+}
 
-    color: aliceblue;
+h2 {
+  color: aliceblue;
 }
 
 table,
@@ -20,7 +18,36 @@ td {
   border: 1px solid;
 }
 
-#container{
-
+#container {
   color: aliceblue;
+}
+.but {
+  display: flex;
+  justify-content: first baseline;
+}
+.but {
+  background-color: gray;
+  width: fit-content;
+}
+
+
+
+table,
+td,
+th {
+  border: 1px solid aliceblue;
+}
+
+#myForm {
+background-color:grey ;width: 300px;
+width: 185 px;
+display:flex;
+justify-content: left;
+margin-left: 40px;
+}
+
+#firForm label {
+font-style:oblique;
+font-size: medium;
+
 }
